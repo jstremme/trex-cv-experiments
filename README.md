@@ -20,9 +20,17 @@ The instructions and code in this repository have been tested on MacOS Big Sur V
 5. Use `conda` to build a Python environment for trex by running: `conda create -n tracking -c trexing trex` from the base directory of this repository in your terminal.  This will install Python package dependencies and might take a few minutes.
 6. Run `conda activate tracking` to activate the environment.
 7. Start using trex as described [here](https://trex.run/docs/run.html), by running the command: `trex`.
-8. See the next section of this README for information on analyzing specific XXX experiments from XXX.
+8. See the next section of this README for information on analyzing specific video footage.
 
 ### Analyze Deformed Tadpole Experiments
+
+For this proof of concept, I've been given access to video footage from Levin lab.  If interested in contributing, please contact joelstremmel22@gmail.com, and I will connect you with the researchers who might be able to provide access to their footage.  
+
+1. Once you have access to the footage, download and save all video clips to a directory within this project called `footage`.  Note that the `footage` directory is listed in the `.gitignore` file for this repository and will therefore not be uploaded to GitHub when pushing changes to this repository to a branch.
+2. In the `footage` directory, verify that there is a file called `2021-05-28-30-wt-pebble-control-vid2.MOV`.  To analyze a different video file in the steps to follow, simply replace the name of this file with the name of file you wish to analyze.
+3. Run `trex -i ../footage/2021-05-28-30-wt-pebble-control-vid2.MOV -track_max_individuals 50 -individual_prefix "tadpole"`
+
+black-pebble-control-2-muted.m4v
 
 ### Contributing
 
