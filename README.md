@@ -3,11 +3,11 @@
 [![python38](https://img.shields.io/badge/python-3-orange.svg)]()
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-Contains code and instructions for analyzing experiments with the [trex](https://github.com/mooch443/trex) computer vision tool
+Contains code and instructions for [Levin lab](https://ase.tufts.edu/biology/labs/levin/) motion analysis with the [trex](https://github.com/mooch443/trex) computer vision tool
 
 ### About
 
-...
+This repository contains proof of concept code and instructions for analyzing video footage from [Levin lab](https://ase.tufts.edu/biology/labs/levin/) using the [trex](https://github.com/mooch443/trex) computer vision tool.  Video data of deformed tadpole experiments was provided by Vaibhav Pai.  After receiving access to this data, follow the sections below to build the environment to install and run trex, then analyze the deformed tadpole videos with the trex tool.
 
 ### Build the Trex Environment
 
@@ -22,7 +22,7 @@ The instructions and code in this repository have been tested on MacOS Big Sur V
 7. Start using trex as described [here](https://trex.run/docs/run.html), by running the command: `trex`.
 8. See the next section of this README for information on analyzing specific XXX experiments from XXX.
 
-### Analyze experiments
+### Analyze Deformed Tadpole Experiments
 
 ### Contributing
 
