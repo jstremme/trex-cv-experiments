@@ -28,9 +28,9 @@ For this proof of concept, I've been given access to video footage from Levin la
 
 1. Once you have access to the footage, download and save all video clips to a directory within this project called `footage`.  Note that the `footage` directory is listed in the `.gitignore` file for this repository and will therefore not be uploaded to GitHub when pushing changes to this repository to a branch.
 2. In the `footage` directory, verify that there is a file called `2021-05-28-30-wt-pebble-control-vid2.MOV`.  To analyze a different video file in the steps to follow, simply replace the name of this file with the name of file you wish to analyze.
-3. Run `trex -i ../footage/2021-05-28-30-wt-pebble-control-vid2.MOV -track_max_individuals 50 -individual_prefix "tadpole"`
+3. Run `trex -i ../footage/2021-05-28-30-wt-pebble-control-vid2.MOV -track_max_individuals 50 -individual_prefix "tadpole"`.  If you happen to know the number of individuals in the experiment, specify this number exactly.
 
-black-pebble-control-2-muted.m4v
+For more information on analyzing footage with trex, see the [trex docs](https://trex.run/docs/).
 
 ### Contributing
 
