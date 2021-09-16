@@ -7,7 +7,7 @@ Contains code and instructions for [Levin lab](https://ase.tufts.edu/biology/lab
 
 ### About
 
-This repository contains proof of concept code and instructions for analyzing video footage from [Levin lab](https://ase.tufts.edu/biology/labs/levin/) using the [trex](https://github.com/mooch443/trex) computer vision tool.  Video data of deformed tadpole experiments was provided by Vaibhav Pai.  After receiving access to this data, follow the sections below to build the environment to install and run trex, then analyze the deformed tadpole videos with the trex tool.
+This repository contains proof of concept code and instructions for analyzing video footage from [Levin lab](https://ase.tufts.edu/biology/labs/levin/) using the [trex](https://github.com/mooch443/trex) computer vision tool.  Video data of deformed tadpole experiments was provided by Vaibhav Pai.  After receiving access to this data, follow the sections below to build the environment to install and run trex, then analyze the deformed tadpole videos with the trex tool.  Note that trex comes with [tgrabs](https://trex.run/docs/parameters_tgrabs.html), a tool for live-tracking and video conversion.  Following the instructions below to build the environment for and install trex, will also setup tgrabs.
 
 ### Build the Trex Environment
 
@@ -26,10 +26,10 @@ The instructions and code in this repository have been tested on MacOS Big Sur V
 
 For this proof of concept, I've been given access to video footage from Levin lab.  If interested in contributing, please contact joelstremmel22@gmail.com, and I will connect you with the researchers who might be able to provide access to their footage.  
 
-1. Once you have access to the footage, download and save all video clips to a directory within this project called `footage`.  Note that the `footage` directory is listed in the `.gitignore` file for this repository and will therefore not be uploaded to GitHub when pushing changes to this repository to a branch.
-2. In the `footage` directory, verify that there is a file called `2021-05-28-30-wt-pebble-control-vid2.MOV`.  To analyze a different video file in the steps to follow, replace the name of this file with the name of the file you wish to analyze.
-3. In the coda environment, run `tgrabs -i "/path/to/your/video" -o "video"` to [create a PV file in the right place](https://github.com/mooch443/trex#usage).
-4. In the coda environment, run `trex -i "video" -track_max_individuals 50 -individual_prefix "tadpole"`.  If you happen to know the number of individuals in the experiment, specify this number exactly.
+1. Once you have access to the footage, download and save all video clips to a directory of your choice.  You might wish to use a directory in this project called `footage` which is listed in the `.gitignore` file for this repository and will therefore not be uploaded to GitHub when pushing changes to this repository to a branch.
+2. In the `footage` directory or any other you wish to use, identify a `.mp4` file that you would like to convert.
+3. In the conda environment, run `tgrabs -i "/path/to/your/video.mp4" -o "video"` to [create a `.pv` file in the right place](https://github.com/mooch443/trex#usage).
+4. In the conda environment, run `trex -i "video" -track_max_individuals 50 -individual_prefix "tadpole"`.  If you happen to know the number of individuals in the experiment, specify this number exactly.
 
 For more information on analyzing footage with trex, see the [trex docs](https://trex.run/docs/).
 
