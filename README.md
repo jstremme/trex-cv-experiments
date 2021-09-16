@@ -26,8 +26,8 @@ The instructions and code in this repository have been tested on MacOS Big Sur V
 
 For this proof of concept, I've been given access to video footage from Levin lab.  If interested in contributing, please contact joelstremmel22@gmail.com, and I will connect you with the researchers who might be able to provide access to their footage.  
 
-1. Once you have access to the footage, download and save all video clips to a directory of your choice.  You might wish to use a directory in this project called `footage` which is listed in the `.gitignore` file for this repository and will therefore not be uploaded to GitHub when pushing changes to this repository to a branch.
-2. In the `footage` directory or any other you wish to use, identify a `.mp4` file that you would like to convert.
+1. Once you have access to the footage, download and save all video clips to a directory of your choice.
+2. In your directory of footage, identify a `.mp4` file that you would like to convert.
 3. In the conda environment, run `tgrabs -i "/path/to/your/video.mp4" -o "video"` to [create a `.pv` file in the right place](https://github.com/mooch443/trex#usage).
 4. In the conda environment, run `trex -i "video" -track_max_individuals 50 -individual_prefix "tadpole"`.  If you happen to know the number of individuals in the experiment, specify this number exactly.
 
