@@ -24,12 +24,24 @@ The instructions and code in this repository have been tested on MacOS Big Sur V
 
 ### Analyze Deformed Tadpole Experiments
 
-For this proof of concept, I've been given access to video footage from Levin lab.  If interested in contributing, please contact joelstremmel22@gmail.com, and I will connect you with the researchers who might be able to provide access to their footage.  
+For this proof of concept, I've been given access to video footage of tadpoles from Levin lab.  If interested in contributing, please contact joelstremmel22@gmail.com, and I will connect you with the researchers who might be able to provide access to their footage.  The steps to follow could be replaced with other footage to track and analyze other creatures.
+
+##### Running Trex to Track Tadpoles
 
 1. Once you have access to the footage, download and save all video clips to a directory of your choice.
 2. In your directory of footage, identify a `.mp4` file that you would like to convert.
-3. In the conda environment, run `tgrabs -i "/path/to/your/video.mp4" -o "video"` to [create a `.pv` file in the right place](https://github.com/mooch443/trex#usage).
-4. In the conda environment, run `trex -i "video" -track_max_individuals 50 -individual_prefix "tadpole"`.  If you happen to know the number of individuals in the experiment, specify this number exactly.
+3. In the conda environment, run `tgrabs -i "/path/to/your/video.mp4" -o "desired-video-name"` to [create a `.pv` in a directory on your machine at ~/Videos](https://github.com/mooch443/trex#usage).
+4. In the conda environment, run `trex -i "~/desired-video-name.pv" -track_max_individuals 30 -individual_prefix "tadpole" -auto_quit`.  If you happen to know the number of individuals in the experiment, specify this number exactly.
+
+For more information on tracking creatures with trex, see the [trex docs](https://trex.run/docs/).
+
+##### Analyzing Trex Outputs
+
+The analysis to follow uses the video: `black pebble control 2 - muted.m4v` renamed as `black-pebble-control-2-muted.mp4`.
+
+1. To view the outputs from Trex, we will use a Jupyter notebook.  Install [Jupyter](https://jupyter.org/) by running `pip install notebook` from within your conda environment.
+2. To open Jupyter, run `jupyter notebook` from within the base directory of this repository.
+3. Open and run `analyze_tadpole_data.ipynb`.
 
 For more information on analyzing footage with trex, see the [trex docs](https://trex.run/docs/).
 
