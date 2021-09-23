@@ -39,11 +39,11 @@ For more information on tracking creatures with trex, see the [trex docs](https:
 
 The analysis to follow uses the video: `black pebble control 2 - muted.m4v` renamed as `black-pebble-control-2-muted.mp4`.
 
-1. To view the outputs from Trex, we will use a Jupyter notebook.  Install [Jupyter](https://jupyter.org/) by running `pip install notebook` from within your conda environment.
+1. To view and analyze the outputs from Trex, install [Jupyter](https://jupyter.org/) by running `pip install notebook` from within your conda environment.
 2. To open Jupyter, run `jupyter notebook` from within the base directory of this repository.
-3. Open and run `analyze_tadpole_data.ipynb`.
+3. Open `analyze_tadpole_data.ipynb` to view and run existing code for this analysis.  See contributing instructions regarding adding code.
 
-For more information on analyzing footage with trex, see the [trex docs](https://trex.run/docs/).
+Next steps for tadpole analysis are documented in the notebook.  Functions and large code blocks in the notebook will eventually be moved to general Python modules in this repository.
 
 ### Contributing
 
