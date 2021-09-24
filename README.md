@@ -31,7 +31,7 @@ For this proof of concept, I've been given access to video footage of tadpoles f
 1. Once you have access to the footage, download and save all video clips to a directory of your choice.
 2. In your directory of footage, identify a `.mp4` file that you would like to convert.
 3. In the conda environment, run `tgrabs -i "/path/to/your/video.mp4" -o "desired-video-name"` to [create a `.pv` in a directory on your machine at ~/Videos](https://github.com/mooch443/trex#usage).
-4. In the conda environment, run `trex -i "~/desired-video-name.pv" -track_max_individuals 30 -individual_prefix "tadpole" -auto_quit`.  If you happen to know the number of individuals in the experiment, specify this number exactly.
+4. In the conda environment, run `trex -i "~/desired-video-name.pv" -track_max_individuals 37 -individual_prefix "tadpole" -auto_quit`.  If you happen to know the number of individuals in the experiment, specify this number exactly.
 
 For more information on tracking creatures with trex, see the [trex docs](https://trex.run/docs/).
 
